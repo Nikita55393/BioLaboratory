@@ -1,0 +1,28 @@
+﻿<Window x:Class="biobob.adm2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:biobob"
+        mc:Ignorable="d"
+        Title="adm2" Height="351" Width="307">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFB5E383" Offset="1"/>
+                <GradientStop Color="#FF498C51" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textb1" HorizontalAlignment="Left" Margin="27,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="252" PreviewTextInput="textb1_PreviewTextInput"/>
+        <TextBox x:Name="textb2" HorizontalAlignment="Left" Margin="27,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="252" PreviewTextInput="textb2_PreviewTextInput"/>
+        <ComboBox x:Name="Combo" HorizontalAlignment="Left" Margin="27,52,0,0" VerticalAlignment="Top" Width="252"/>
+        <Label Content="Услуга" HorizontalAlignment="Left" Margin="27,21,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label Content="Статус услуги" HorizontalAlignment="Left" Margin="27,89,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Статус заказа" HorizontalAlignment="Left" Margin="27,139,0,0" VerticalAlignment="Top" Width="174"/>
+        <Button Content="Создать отчёт" HorizontalAlignment="Left" Margin="25,204,0,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF498C51" Foreground="White" Height="37" Width="254"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="25,265,0,0" VerticalAlignment="Top" Background="#FF498C51" Foreground="White" Height="37" Width="254" Click="Button_Click_1"/>
+    </Grid>
+</Window>

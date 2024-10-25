@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6e59c01784744f0fa3be621e6e5a2316" Name="Diagram1">
+        <EntityTypeShape EntityType="BiomaterModel.Image" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Server_" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.sysdiagram" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.User_" Width="1.5" PointX="10" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Администратор" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Анализатор" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Биоматериал" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Бухгалтер" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Заказ" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Лаборант" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Лист1_" Width="1.5" PointX="12.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Оказанная_услуга" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Паспорт" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Пациент" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Полис" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Пользователь" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Страховая" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Тип_пользователя" Width="1.5" PointX="7.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BiomaterModel.Услуги_лаб" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="BiomaterModel.FK_Заказ_Server_" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Услуги_лаб_Server_" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_User__Тип_пользователя" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Лист1__User_" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Оказанная_услуга_Анализатор" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Заказ_Биоматериал" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Заказ_Пациент" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Оказанная_услуга_Лаборант" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Оказанная_услуга_Услуги_лаб" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Пациент_Паспорт" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Пациент_Полис" ManuallyRouted="false" />
+        <AssociationConnector Association="BiomaterModel.FK_Пациент_Страховая" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

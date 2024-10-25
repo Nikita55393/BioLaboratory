@@ -1,0 +1,35 @@
+﻿<Window x:Class="biobob.Bio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:biobob"
+        mc:Ignorable="d"
+        Title="Bio" Height="450" Width="534">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFB5E383" Offset="1"/>
+                <GradientStop Color="#FF498C51" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Принять биоматериал" HorizontalAlignment="Left" Margin="46,248,0,0" VerticalAlignment="Top" Click="Button_Click" Width="221" FontSize="20" Background="#FF498C51" Foreground="White" Height="51"/>
+        <TextBox x:Name="tex1" HorizontalAlignment="Left" Margin="46,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" PreviewTextInput="tex1_PreviewTextInput" TextChanged="tex1_TextChanged"/>
+        <ComboBox x:Name="Combo" HorizontalAlignment="Left" Margin="46,46,0,0" VerticalAlignment="Top" Width="222"/>
+        <Button Content="Назад" HorizontalAlignment="Center" Margin="0,327,0,0" VerticalAlignment="Top" Width="204" FontSize="20" Background="#FF498C51" Foreground="White" Height="51" Click="Button_Click_2"/>
+        <ComboBox x:Name="Combpa" HorizontalAlignment="Left" Margin="46,103,0,0" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="tex2" HorizontalAlignment="Left" Margin="46,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" PreviewTextInput="tex2_PreviewTextInput" TextChanged="tex2_TextChanged"/>
+        <Label Content="Услуга" HorizontalAlignment="Left" Margin="46,20,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Пациент" HorizontalAlignment="Left" Margin="46,73,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Статус заказа" HorizontalAlignment="Left" Margin="46,126,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Статус услуги" HorizontalAlignment="Left" Margin="46,180,0,0" VerticalAlignment="Top" Width="153"/>
+        <Image x:Name="imgsh" HorizontalAlignment="Left" Height="100" Margin="294,46,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Добавить пациента" HorizontalAlignment="Left" Margin="294,248,0,0" VerticalAlignment="Top" Width="204" FontSize="20" Background="#FF498C51" Foreground="White" Height="51" Click="Button_Click_1"/>
+        <TextBox x:Name="tex3" HorizontalAlignment="Left" Margin="294,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="204" PreviewTextInput="tex3_PreviewTextInput" TextChanged="tex3_TextChanged"/>
+        <Label Content="Код штрихкода (не обязательно)" HorizontalAlignment="Left" Margin="294,180,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
